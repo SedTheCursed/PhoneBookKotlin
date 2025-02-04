@@ -1,0 +1,35 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Phone Book (Kotlin)/*
+!/Phone Book (Kotlin)/task/
+/Phone Book (Kotlin)/task/*
+!/Phone Book (Kotlin)/task/src
+
+# Project exclude paths
+/Topics/Floating-point types/Difference between two doubles/out/
+/Topics/Floating-point types/Difference between two doubles/out/production/classes/
+/Topics/Floating-point types/Liquid pressure/out/
+/Topics/Floating-point types/Liquid pressure/out/production/classes/
+/Topics/Floating-point types/What is the result/out/
+/Topics/Floating-point types/What is the result/out/production/classes/
+/Topics/For loop and lists/Transforming a list of integers through odd or even checks/out/
+/Topics/For loop and lists/Transforming a list of integers through odd or even checks/out/production/classes/
+/Topics/Hierarchy of exceptions/RuntimeException/out/
+/Topics/Hierarchy of exceptions/RuntimeException/out/production/classes/
+/Topics/Ordering elements in collection/List of students/out/
+/Topics/Ordering elements in collection/List of students/out/production/classes/
+/Topics/The Math library/Fractional part/out/
+/Topics/The Math library/Fractional part/out/production/classes/
+/Topics/The Math library/Pow/out/
+/Topics/The Math library/Pow/out/production/classes/
+/Topics/
