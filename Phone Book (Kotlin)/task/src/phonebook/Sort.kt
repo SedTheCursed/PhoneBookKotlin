@@ -9,32 +9,28 @@ import java.io.File
  * @return Pair with the sorted List and the time needed to sort it.
  */
 fun bubbleSort(phonebook: File): Pair<List<String>, String> {
-    //Actual algorithm
-//    val start = System.currentTimeMillis()
-//    val book = phonebook.readLines().toMutableList()
+    val start = System.currentTimeMillis()
+    val book = phonebook.readLines().toMutableList()
 
-//    // Initialize a flag for swaps
-//    var swapped = true
-//
-//    // Continue until no more swaps are needed
-//    while (swapped) {
-//        swapped = false
-//        for (i in 1..book.lastIndex) {
-//            val name = book[i].name()
-//            val previousName = book[i -1].name()
-//            if (name < previousName) {
-//                // Compare adjacent elements and swap if necessary (for ascending order)
-//                book[i] = book[i - 1].also { book[i - 1] = book[i] }
-//                swapped = true
-//            }
-//        }
-//    }
-//
-//    val sortingTime = "Sorting time: %s".format(calculateTime(start))
-//    return book to sortingTime
+    // Initialize a flag for swaps
+    var swapped = true
 
-    //Solution to pass the test
-    return quickSort(phonebook)
+    // Continue until no more swaps are needed
+    while (swapped) {
+        swapped = false
+        for (i in 1..book.lastIndex) {
+            val name = book[i].name()
+            val previousName = book[i -1].name()
+            if (name < previousName) {
+                // Compare adjacent elements and swap if necessary (for ascending order)
+                book[i] = book[i - 1].also { book[i - 1] = book[i] }
+                swapped = true
+            }
+        }
+    }
+
+    val sortingTime = "Sorting time: %s".format(calculateTime(start))
+    return book to sortingTime
 }
 
 /**
